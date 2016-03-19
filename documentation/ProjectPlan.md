@@ -10,8 +10,8 @@
 
 ### Week 9
 - [ ] Spring break
-- [ ] Set up project sructure for logging
-- [ ] Set up project structure for unit testing
+- [X] Set up project sructure for logging
+- [X] Set up project structure for unit testing
 
 ### Week 10
 - [ ] Deploy the service to OpenShift.
