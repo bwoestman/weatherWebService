@@ -17,6 +17,16 @@ public class TestsForWeatherController
         int response = weatherController.sendGet();
         assertTrue(response == 200);
     }
+    
+    @Test
+    public void testReturnType() {
+
+        WeatherController weatherController = new WeatherController();
+
+
+    }
+
+
 
 
 
