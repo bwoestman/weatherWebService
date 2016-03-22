@@ -4,7 +4,7 @@
  */
 public class DayOfWeather {
 
-    // Chance of precip
+
     // Cloudiness
     // Wind
     // High Temp
