@@ -42,6 +42,7 @@ public class WeatherController
 
         //print result
         log.info(response.toString());
+        log.info("**********************************************************");
         return responseCode;
     }
 }
