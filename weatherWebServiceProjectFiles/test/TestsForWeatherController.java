@@ -23,7 +23,6 @@ public class TestsForWeatherController
 
         WeatherController weatherController = new WeatherController();
 
-
     }
 
 
