@@ -1,5 +1,6 @@
 import org.apache.log4j.Logger;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -14,8 +15,11 @@ public class WeatherController
 
     public int sendGet() throws Exception {
 
+//        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
+//            "89";
+
         String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-            "89";
+                "89";
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -32,8 +36,19 @@ public class WeatherController
 
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
-        String inputLine;
+
+        String message = con.getResponseMessage();
+        log.info(message);
+
+        printJSONResponse(in);
+
+        return responseCode;
+    }
+
+    public String printJSONResponse(BufferedReader in) throws IOException {
+
         StringBuffer response = new StringBuffer();
+        String inputLine;
 
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
@@ -43,6 +58,7 @@ public class WeatherController
         //print result
         log.info(response.toString());
         log.info("**********************************************************");
-        return responseCode;
+
+        return response.toString();
     }
 }

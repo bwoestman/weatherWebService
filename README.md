@@ -27,5 +27,10 @@ Many weather web services return massive amounts of data when you request from t
 - [ ] Double check the due date and make revisions to the project plan
 
 ### Week 10
+- [ ] Do something fun
+
+### Week 11
 - [ ] Deploy the service to OpenShift.
-- [ ] Group presentation.
+ 
+### Week 12
+- [ ] Group presentation

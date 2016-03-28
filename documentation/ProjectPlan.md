@@ -1,3 +1,10 @@
+# weatherWebService
+Web service to get and organize weather stats.
+
+## Problem Statement
+
+Many weather web services return massive amounts of data when you request from their url.  The data would be easier to use if it were organized into a weekly report instead of separate requests to obtain the data.  Our service will make the requests necessary to generate a weekly weather report.
+
 # Project Plan
 
 ### Week 7
@@ -20,5 +27,10 @@
 - [ ] Double check the due date and make revisions to the project plan
 
 ### Week 10
+- [ ] Do something fun
+
+### Week 11
 - [ ] Deploy the service to OpenShift.
-- [ ] Group presentation.
+ 
+### Week 12
+- [ ] Group presentation

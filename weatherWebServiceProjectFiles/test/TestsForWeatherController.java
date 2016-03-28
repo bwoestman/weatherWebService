@@ -18,6 +18,10 @@ public class TestsForWeatherController
         assertTrue(response == 200);
     }
 
+    @Test
+    public void testReturnType() {
 
+        WeatherController weatherController = new WeatherController();
 
+    }
 }
