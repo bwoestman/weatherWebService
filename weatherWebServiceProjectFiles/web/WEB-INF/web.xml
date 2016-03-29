@@ -3,20 +3,5 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <display-name>ourPackage</display-name>
-    //Package name containing our service classes
-    <servlet>
-        <servlet-name>Jersey REST Service</servlet-name>
-        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-        //Tomee?
-        <init-param>
-            <param-name>jersey.config.server.provider.packages</param-name>
-            <param-value>ourPackage</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Jersey REST Service</servlet-name>
-        <url-pattern>/rest/*</url-pattern>
-    </servlet-mapping>
+    <display-name>weatherWebServiceProjectFiles</display-name>
 </web-app>
