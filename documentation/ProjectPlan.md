@@ -17,16 +17,18 @@ Many weather web services return massive amounts of data when you request from t
 
 ### Week 9
 - [X] Spring break
-- [X] Set up project sructure for logging
+- [X] Set up project structure for logging
 - [X] Set up project structure for unit testing
 - [X] Create request object to get weather data
-- [ ] Create Pojo(s) for saving the daily weather
-- [ ] Convert incoming request to usable json data that will be sent as our web service
-- [ ] Create unit tests for each class
+- [X] Create Pojo(s) for saving the daily weather
+- [X] Create unit tests for each class
+- [X] Create class for outputting service
 - [ ] Task management (assign remaining tasks to each team member)
-- [ ] Double check the due date and make revisions to the project plan
+- [X] Double check the due date and make revisions to the project plan
 
 ### Week 10
+- [ ] Debug output class
+- [ ] Convert incoming request to usable json data that will be sent as our web service
 - [ ] Do something fun
 
 ### Week 11
