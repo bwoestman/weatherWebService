@@ -84,3 +84,24 @@ OK
   "LowTemperatureOfDay": "lowTemp",
   "ChanceOfPrecipitation": "precip"
 }
+{
+  "Cloudiness": "clouds",
+  "WindSpeed": "windSpeed",
+  "HighTemperatureOfDay": "highTemp",
+  "LowTemperatureOfDay": "lowTemp",
+  "ChanceOfPrecipitation": "precip"
+}
+{
+  "Cloudiness": "clouds",
+  "WindSpeed": "windSpeed",
+  "HighTemperatureOfDay": "highTemp",
+  "LowTemperatureOfDay": "lowTemp",
+  "ChanceOfPrecipitation": "precip"
+}
+{
+  "Cloudiness": "clouds",
+  "WindSpeed": "windSpeed",
+  "HighTemperatureOfDay": "highTemp",
+  "LowTemperatureOfDay": "lowTemp",
+  "ChanceOfPrecipitation": "precip"
+}
