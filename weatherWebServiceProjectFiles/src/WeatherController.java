@@ -40,14 +40,14 @@ public class WeatherController
         String message = con.getResponseMessage();
         log.info(message);
 
-        printJSONResponse(in);
+        //printJSONResponse(in);
 
         return responseCode;
     }
 
     public String printJSONResponse(BufferedReader in) throws IOException {
 
-        StringBuffer response = new StringBuffer();
+        StringBuilder response = new StringBuilder();
         String inputLine;
 
         while ((inputLine = in.readLine()) != null) {

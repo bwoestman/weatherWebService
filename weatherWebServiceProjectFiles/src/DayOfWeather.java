@@ -4,6 +4,7 @@
  */
 public class DayOfWeather {
 
+    // TODO: match instance variables to keys in json?
     private String cloudiness;
     private String windSpeed;
     private String highTemperatureOfDay;
