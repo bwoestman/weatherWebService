@@ -40,7 +40,7 @@ public class WeatherController
         String message = con.getResponseMessage();
         log.info(message);
 
-        //printJSONResponse(in);
+        printJSONResponse(in);
 
         return responseCode;
     }
