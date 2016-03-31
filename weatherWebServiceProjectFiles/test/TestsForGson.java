@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Bdub on 3/29/16.
