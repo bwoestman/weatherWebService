@@ -19,11 +19,11 @@ public class TestsForGson
         DayOfWeather day = new DayOfWeather();
 
         String gsonString = "{\n" +
-                "  \"Cloudiness\": \"clouds\",\n" +
+                "  \"CloudCover\": \"clouds\",\n" +
                 "  \"WindSpeed\": \"windSpeed\",\n" +
-                "  \"HighTemperatureOfDay\": \"highTemp\",\n" +
-                "  \"LowTemperatureOfDay\": \"lowTemp\",\n" +
-                "  \"ChanceOfPrecipitation\": \"precip\"\n" +
+                "  \"TemperatureMax\": \"highTemp\",\n" +
+                "  \"TemperatureMin\": \"lowTemp\",\n" +
+                "  \"PrecipProbability\": \"precip\"\n" +
                 "}";
 
         day.setPrecipProbability("precip");

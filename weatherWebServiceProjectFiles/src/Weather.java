@@ -1,8 +1,6 @@
-import com.sun.net.httpserver.HttpServer;
-import java.io.IOException;
-
-
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 
 /**
  * Created by scheffs on 3/28/2016.
@@ -10,6 +8,7 @@ import javax.ws.rs.*;
 
 // The Java class will be hosted at the URI path "/weather"
 @Path("/weather")
+
 public class Weather {
 //    The Java method will process HTTP GET requests
     @GET
