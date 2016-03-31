@@ -126,6 +126,7 @@ OK
   "TemperatureMin": "lowTemp",
   "PrecipProbability": "precip"
 }
+<<<<<<< HEAD
 {
   "CloudCover": "clouds",
   "WindSpeed": "windSpeed",
@@ -154,3 +155,5 @@ OK
   "TemperatureMin": "lowTemp",
   "PrecipProbability": "precip"
 }
+=======
+>>>>>>> 5dd2ab7abfbad0a5cbdbaeaf0dd3771de90e20d4
