@@ -17,6 +17,7 @@ public class TestsForGson
     public void testGsonBuilder()
     {
         DayOfWeather day = new DayOfWeather();
+
         String gsonString = "{\n" +
                 "  \"Cloudiness\": \"clouds\",\n" +
                 "  \"WindSpeed\": \"windSpeed\",\n" +
@@ -25,10 +26,10 @@ public class TestsForGson
                 "  \"ChanceOfPrecipitation\": \"precip\"\n" +
                 "}";
 
-        day.setChanceOfPrecipitation("precip");
-        day.setCloudiness("clouds");
-        day.setHighTemperatureOfDay("highTemp");
-        day.setLowTemperatureOfDay("lowTemp");
+        day.setPrecipProbability("precip");
+        day.setCloudCover("clouds");
+        day.setTemperatureMax("highTemp");
+        day.setTemperatureMin("lowTemp");
         day.setWindSpeed("windSpeed");
 
         Gson gson = new GsonBuilder()

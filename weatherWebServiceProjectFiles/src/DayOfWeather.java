@@ -5,18 +5,18 @@
 public class DayOfWeather {
 
     // TODO: match instance variables to keys in json?
-    private String cloudiness;
+    private String cloudCover;
     private String windSpeed;
-    private String highTemperatureOfDay;
-    private String lowTemperatureOfDay;
-    private String chanceOfPrecipitation;
+    private String temperatureMax;
+    private String temperatureMin;
+    private String precipProbability;
 
-    public String getCloudiness() {
-        return cloudiness;
+    public String getCloudCover() {
+        return cloudCover;
     }
 
-    public void setCloudiness(String cloudiness) {
-        this.cloudiness = cloudiness;
+    public void setCloudCover(String cloudCover) {
+        this.cloudCover = cloudCover;
     }
 
     public String getWindSpeed() {
@@ -27,36 +27,36 @@ public class DayOfWeather {
         this.windSpeed = windSpeed;
     }
 
-    public String getHighTemperatureOfDay() {
-        return highTemperatureOfDay;
+    public String getTemperatureMax() {
+        return temperatureMax;
     }
 
-    public void setHighTemperatureOfDay(String highTemperatureOfDay) {
-        this.highTemperatureOfDay = highTemperatureOfDay;
+    public void setTemperatureMax(String temperatureMax) {
+        this.temperatureMax = temperatureMax;
     }
 
-    public String getLowTemperatureOfDay() {
-        return lowTemperatureOfDay;
+    public String getTemperatureMin() {
+        return temperatureMin;
     }
 
-    public void setLowTemperatureOfDay(String lowTemperatureOfDay) {
-        this.lowTemperatureOfDay = lowTemperatureOfDay;
+    public void setTemperatureMin(String temperatureMin) {
+        this.temperatureMin = temperatureMin;
     }
 
-    public String getChanceOfPrecipitation() {
-        return chanceOfPrecipitation;
+    public String getPrecipProbability() {
+        return precipProbability;
     }
 
-    public void setChanceOfPrecipitation(String chanceOfPrecipitation) {
-        this.chanceOfPrecipitation = chanceOfPrecipitation;
+    public void setPrecipProbability(String precipProbability) {
+        this.precipProbability = precipProbability;
     }
 
     public String toString() {
 
         return "Wind Speed: " + getWindSpeed()
-                + "Cloudiness: " + getCloudiness()
-                + "High Temp of Day: " + getHighTemperatureOfDay()
-                + "Low Temp of Day: " + getLowTemperatureOfDay()
-                + "Precip Chance: " + getChanceOfPrecipitation();
+                + "Cloudiness: " + getCloudCover()
+                + "High Temp of Day: " + getTemperatureMax()
+                + "Low Temp of Day: " + getTemperatureMin()
+                + "Precip Chance: " + getPrecipProbability();
     }
 }
