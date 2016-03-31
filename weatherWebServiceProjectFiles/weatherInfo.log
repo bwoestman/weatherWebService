@@ -105,3 +105,52 @@ OK
   "LowTemperatureOfDay": "lowTemp",
   "ChanceOfPrecipitation": "precip"
 }
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
