@@ -157,3 +157,31 @@ OK
 }
 =======
 >>>>>>> 5dd2ab7abfbad0a5cbdbaeaf0dd3771de90e20d4
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}

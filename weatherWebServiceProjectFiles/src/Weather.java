@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 
 public class Weather {
 //    The Java method will process HTTP GET requests
+
     @GET
     // The Java method will produce content identified by the MIME media type "text/plain"
     @Produces("text/plain")
