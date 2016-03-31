@@ -40,6 +40,7 @@ public class TestsForGson
                 .create();
 
         log.info(gson.toJson(day));
+        log.info(gsonString);
         assertTrue((gson.toJson(day)).equals(gsonString));
     }
 }
