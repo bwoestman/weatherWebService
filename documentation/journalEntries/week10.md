@@ -1,0 +1,1 @@
+* BW - this week in class I explained how to use Postman to do requests, fixed some merge conflicts & worked through some package problems from git pushes.
