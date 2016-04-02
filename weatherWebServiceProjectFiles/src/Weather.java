@@ -9,13 +9,15 @@ import javax.ws.rs.Produces;
 // The Java class will be hosted at the URI path "/weather"
 @Path("/weather")
 
-public class Weather {
+public class Weather
+{
 //    The Java method will process HTTP GET requests
 
     @GET
     // The Java method will produce content identified by the MIME media type "text/plain"
     @Produces("text/plain")
-    public String getClichedMessage() {
+    public String getClichedMessage()
+    {
         // Return some cliched textual content
         return "Hello Weather";
     }

@@ -19,7 +19,8 @@ public class TestsForWeatherController
     }
 
     @Test
-    public void testReturnType() {
+    public void testReturnType()
+    {
 
         WeatherController weatherController = new WeatherController();
 

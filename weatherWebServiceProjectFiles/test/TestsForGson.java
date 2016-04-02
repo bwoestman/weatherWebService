@@ -2,6 +2,7 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.log4j.Logger;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -42,5 +43,21 @@ public class TestsForGson
         log.info(gson.toJson(day));
         log.info(gsonString);
         assertTrue((gson.toJson(day)).equals(gsonString));
+    }
+
+    @Test
+    public void testGsonConversion() throws Exception
+    {
+        String json = "{\"cloudCover\":\"Cloud Cover\", \"windSpeed\":\"Wind Speed\", " +
+                "\"temperatureMax\":\"High Temp\", \"temperatureMin\":\"Low Temp\", " +
+                "\"precipProbabability\":\"Precipitation\"}";
+        String mismatchedJson = "{\"cloudCover\":\"Clouds\", \"noVar\":\"noVar\"}";
+
+        Gson gson = new GsonBuilder().create();
+        DayOfWeather dow = gson.fromJson(json, DayOfWeather.class);
+        DayOfWeather mmjDow = gson.fromJson(mismatchedJson, DayOfWeather.class);
+
+        log.info(dow.toString());
+        log.info(mmjDow.toString());
     }
 }
