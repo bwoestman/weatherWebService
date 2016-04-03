@@ -13,6 +13,17 @@ import static org.junit.Assert.assertTrue;
 public class TestsForGson
 {
     private final static Logger log = Logger.getLogger("Gson");
+    private Gson gson;
+
+    @Before
+    public void initializtion()
+    {
+        gson = new GsonBuilder().create();
+    }
+
+    /**
+     * this tests that the gson builds a proper json from the DoW object
+     */
 
     @Test
     public void testGsonBuilder()
@@ -45,19 +56,42 @@ public class TestsForGson
         assertTrue((gson.toJson(day)).equals(gsonString));
     }
 
-    @Test
-    public void testGsonConversion() throws Exception
-    {
-        String json = "{\"cloudCover\":\"Cloud Cover\", \"windSpeed\":\"Wind Speed\", " +
-                "\"temperatureMax\":\"High Temp\", \"temperatureMin\":\"Low Temp\", " +
-                "\"precipProbabability\":\"Precipitation\"}";
-        String mismatchedJson = "{\"cloudCover\":\"Clouds\", \"noVar\":\"noVar\"}";
+    /**
+     * this tests that a DoW object's properties are set by a json
+     *
+     * @throws Exception
+     */
 
-        Gson gson = new GsonBuilder().create();
+    @Test
+    public void testMatchedGsonConversion() throws Exception
+    {
+        String json = "{" +
+                "\"cloudCover\":\"Cloud Cover\"," +
+                " \"windSpeed\":\"Wind Speed\", " +
+                "\"temperatureMax\":\"High Temp\", " +
+                "\"temperatureMin\":\"Low Temp\", " +
+                "\"precipProbability\":\"Precipitation\"}";
+
+        String toString = "Wind Speed: Wind Speed, Cloudiness: Cloud Cover, " +
+                "High Temp of Day: High Temp, Low Temp of Day: Low Temp, " +
+                "Precip Chance: Precipitation";
+
         DayOfWeather dow = gson.fromJson(json, DayOfWeather.class);
+
+        assertTrue(toString.equals(dow.toString()));
+    }
+
+    @Test
+    public void testMismatchedJsonConversion()
+    {
+        String mismatchedJson = "{\"" +
+                "cloudCover\":\"Clouds\", \"" +
+                "noVar\":\"noVar\"}";
+        String toString = "Wind Speed: null, Cloudiness: Clouds, High Temp of Day: null," +
+                " Low Temp of Day: null, Precip Chance: null";
+
         DayOfWeather mmjDow = gson.fromJson(mismatchedJson, DayOfWeather.class);
 
-        log.info(dow.toString());
-        log.info(mmjDow.toString());
+        assertTrue(toString.equals(mmjDow.toString()));
     }
 }
