@@ -1,1 +1,1 @@
-* BW - this week in class I explained how to use Postman to do requests, fixed some merge conflicts & worked through some package problems from git pushes.
+* BW - this week in class I explained how to use Postman to do requests, fixed some merge conflicts, added a couple tests that deal with converting json to gson & worked through some package problems from git pushes.
