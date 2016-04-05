@@ -25,7 +25,7 @@ public class WeatherController
         this.responseJson = responseJson;
     }
 
-    public int sendGet() throws Exception
+    public BufferedReader sendGet() throws Exception
     {
 
 //        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
@@ -53,9 +53,7 @@ public class WeatherController
         String message = con.getResponseMessage();
         log.info(message);
 
-        printJSONResponse(in);
-
-        return responseCode;
+        return in;
     }
 
     public String printJSONResponse(BufferedReader in) throws IOException

@@ -1,6 +1,8 @@
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
+import java.io.BufferedReader;
+
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -14,14 +16,13 @@ public class TestsForWeatherController
     public void testResponseOk() throws Exception
     {
         WeatherController weatherController = new WeatherController();
-        int response = weatherController.sendGet();
-        assertTrue(response == 200);
+        BufferedReader response = weatherController.sendGet();
+        assertTrue(response != null);
     }
 
     @Test
     public void testReturnType()
     {
-
         WeatherController weatherController = new WeatherController();
 
     }
