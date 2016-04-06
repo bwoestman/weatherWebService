@@ -94,4 +94,6 @@ public class TestsForGson
 
         assertTrue(toString.equals(mmjDow.toString()));
     }
+
+
 }
