@@ -29,6 +29,7 @@ Many weather web services return massive amounts of data when you request from t
 ### Week 10
 - [ ] Debug output class
 - [ ] Convert incoming request to usable json data that will be sent as our web service
+- [x] change instance variables name to match request
 - [ ] Do something fun
 
 ### Week 11
