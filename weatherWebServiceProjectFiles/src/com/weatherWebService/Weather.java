@@ -1,3 +1,5 @@
+package com.weatherWebService;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -19,6 +21,6 @@ public class Weather
     public String getClichedMessage()
     {
         // Return some cliched textual content
-        return "Hello Weather";
+        return "Hello com.weatherWebService.Weather";
     }
 }

@@ -1,3 +1,5 @@
+package com.weatherWebService;
+
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
@@ -12,7 +14,7 @@ import java.net.URL;
 public class WeatherController
 {
     private final String USER_AGENT = "Mozilla/5.0";
-    private final static Logger log = Logger.getLogger("WeatherController"); //this.class
+    private final static Logger log = Logger.getLogger("com.weatherWebService.WeatherController"); //this.class
     private String responseJson = "";
 
     public String getResponseJson()
