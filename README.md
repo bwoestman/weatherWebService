@@ -34,6 +34,14 @@ Many weather web services return massive amounts of data when you request from t
 
 ### Week 11
 - [ ] Deploy the service to OpenShift.
+- [ ] Build to allow input of lat/long. zip code ? city ?  and return of the actual data.
+- [ ] Be sure to externalize any hard-coded values, like the service url into a property file
+- [ ] Add java docs
+- [ ] Be sure each unit test includes an assertion
+- [ ] create a user guide
+- [ ] add a package structure rather than having your classes directly under src
+- [ ] will the service handle a condition in which the service/s you depend on are down?
+
  
 ### Week 12
 - [ ] Group presentation
