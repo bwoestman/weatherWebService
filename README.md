@@ -23,14 +23,14 @@ Many weather web services return massive amounts of data when you request from t
 - [X] Create Pojo(s) for saving the daily weather
 - [X] Create unit tests for each class
 - [X] Create class for outputting service
-- [ ] Task management (assign remaining tasks to each team member)
+- [X] Task management (assign remaining tasks to each team member)
 - [X] Double check the due date and make revisions to the project plan
 
 ### Week 10
 - [ ] Debug output class
-- [ ] Convert incoming request to usable json data that will be sent as our web service
+- [X] Convert incoming request to usable json data that will be sent as our web service
 - [x] change instance variables name to match request
-- [ ] Do something fun
+- [X] Do something fun
 
 ### Week 11
 - [ ] Deploy the service to OpenShift.
@@ -39,9 +39,11 @@ Many weather web services return massive amounts of data when you request from t
 - [ ] Add java docs
 - [ ] Be sure each unit test includes an assertion
 - [ ] create a user guide
-- [ ] add a package structure rather than having your classes directly under src
+- [X] add a package structure rather than having your classes directly under src
 - [ ] will the service handle a condition in which the service/s you depend on are down?
 
  
 ### Week 12
+- [ ] Create PowerPoint
+- [ ] User Guide
 - [ ] Group presentation
