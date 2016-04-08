@@ -11,26 +11,55 @@ import java.util.Properties;
  */
 public class Property {
 
+
     private Properties properties;
     private String propertyUrl = "/weather.properties";
-
+    private String projectName;
+    private String url;
     private String testProperty;
 
-    public final static Logger log = Logger.getLogger("weatherWebService");
+    public final static Logger log = Logger.getLogger("com.weatherWebService.Property");
+
+    public Property() {
+
+        loadProperties(propertyUrl);
+        //setVariables();
+        setTestProperty(properties.getProperty("test"));
+        setProjectName(properties.getProperty("project.name"));
+        setUrl(properties.getProperty("url"));
+
+    }
+
+    public String getProjectName() {
+        return projectName;
+    }
+
+    private void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    private void setUrl(String url) {
+        this.url = url;
+    }
 
     public String getTestProperty() {
         return testProperty;
     }
 
-    public void setTestProperty(String testProperty) {
+    private void setTestProperty(String testProperty) {
+
         this.testProperty = testProperty;
     }
 
-    public Property() {
-
-        loadProperties(propertyUrl);
-        setVariables();
+    public Properties getProperties() {
+        return properties;
     }
+
+
 
     private void loadProperties(String propertiesFilePath) {
 
@@ -42,10 +71,5 @@ public class Property {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-    }
-    private void setVariables() {
-
-        testProperty = properties.getProperty("test");
-        log.info(testProperty);
     }
 }

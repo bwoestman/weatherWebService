@@ -1,7 +1,9 @@
 package com.weatherWebService;
 
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
+import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertTrue;
 
 
@@ -11,17 +13,24 @@ import static junit.framework.Assert.assertTrue;
  */
 public class PropertyTest {
 
+    private final static Logger log = Logger.getLogger("PropertyTest");
+
+
+
     @Test
     public void testLoadProperties() throws Exception {
 
+        Property property = new Property();
+        log.info(property.getProperties());
+        assertNotNull(property.getProperties());
     }
 
     @Test
-    public void testPropertiesVariables() {
-        Property property = new Property();
+    public void checkProjectNameVariable() {
 
-        String test = property.getTestProperty();
-        assertTrue(test.equals("test"));
+        Property property = new Property();
+        String test = property.getProjectName();
+        assertTrue(test.equals("Weather Web Service"));
     }
 
 

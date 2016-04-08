@@ -2,3 +2,9 @@
 
 
 test
+test
+test
+test
+
+Weather Web Service
+{project.name=Weather Web Service, url=https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a, test=test}
