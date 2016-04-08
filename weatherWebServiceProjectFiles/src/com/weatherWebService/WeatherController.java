@@ -32,6 +32,8 @@ public class WeatherController
 
 //        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
 //            "89";
+
+        // todo: maybe test this ?
         String url = property.getUrl();
        // String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
                 //"89";
