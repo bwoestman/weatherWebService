@@ -16,7 +16,7 @@ public class WeatherController
     private final String USER_AGENT = "Mozilla/5.0";
     private final static Logger log = Logger.getLogger("com.weatherWebService.WeatherController"); //this.class
     private String responseJson = "";
-
+    private Property property = new Property();
     public String getResponseJson()
     {
         return responseJson;
@@ -32,9 +32,9 @@ public class WeatherController
 
 //        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
 //            "89";
-
-        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-                "89";
+        String url = property.getUrl();
+       // String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
+                //"89";
 
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
