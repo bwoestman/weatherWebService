@@ -1,4 +1,5 @@
-import com.weatherWebService.WeatherController;
+package com.weatherWebService;
+
 import org.apache.log4j.Logger;
 import org.junit.Test;
 

@@ -1,7 +1,8 @@
+package com.weatherWebService;
+
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.weatherWebService.DayOfWeather;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;

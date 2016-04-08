@@ -336,3 +336,17 @@ Sending 'GET' request to URL : https://api.forecast.io/forecast/384e291c8f229819
 Response Code : 200
 OK
 >>>>>>> 63bb7bd8a5c093094645ab449f24b1bab4e4f546
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
