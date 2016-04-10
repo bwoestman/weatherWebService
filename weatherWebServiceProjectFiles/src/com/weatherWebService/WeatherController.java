@@ -27,18 +27,14 @@ public class WeatherController
         this.responseJson = responseJson;
     }
 
-    public BufferedReader sendGet() throws Exception
+    public BufferedReader sendGet(String lat, String lon) throws Exception
     {
-
-//        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-//            "89";
 
         // todo: maybe test this ?
         String url = property.getUrl();
-       // String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-                //"89";
+        String urlWithQuery = url + lat + "," + lon;
 
-        URL obj = new URL(url);
+        URL obj = new URL(urlWithQuery);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
         // optional default is GET
@@ -48,7 +44,7 @@ public class WeatherController
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        log.info("\nSending 'GET' request to URL : " + url);
+        log.info("\nSending 'GET' request to URL : " + urlWithQuery);
         log.info("Response Code : " + responseCode);
 
         BufferedReader in = new BufferedReader(
