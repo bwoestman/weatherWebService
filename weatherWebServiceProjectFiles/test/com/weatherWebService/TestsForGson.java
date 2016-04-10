@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.BufferedReader;
+
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -97,5 +99,17 @@ public class TestsForGson
         assertTrue(toString.equals(mmjDow.toString()));
     }
 
+    @Test
+    public void testDarkSkyJson() throws Exception
+    {
+        WeatherController weatherController = new WeatherController();
+        BufferedReader in;
+        String json;
 
+        in = weatherController.sendGet("41", "-89");
+        weatherController.printJSONResponse(in);
+        json = weatherController.getResponseJson();
+
+        assertTrue(json != null);
+    }
 }
