@@ -5,6 +5,11 @@ import java.util.List;
 /**
  * Created by Bdub on 4/10/16.
  */
+
+/**
+ * this class is used to store the incoming json data from DarkSky API
+ */
+
 public class ResponseData
 {
     private Daily daily;
