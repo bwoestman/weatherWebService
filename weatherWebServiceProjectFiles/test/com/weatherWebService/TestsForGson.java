@@ -1,8 +1,6 @@
 package com.weatherWebService;
 
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
@@ -57,6 +55,7 @@ public class TestsForGson
 
         log.info(gson.toJson(day));
         log.info(gsonString);
+
         assertTrue((gson.toJson(day)).equals(gsonString));
     }
 
@@ -104,12 +103,19 @@ public class TestsForGson
     {
         WeatherController weatherController = new WeatherController();
         BufferedReader in;
-        String json;
+        String jsonDarkSky;
+        String jsonResponse;
 
         in = weatherController.sendGet("41", "-89");
         weatherController.printJSONResponse(in);
-        json = weatherController.getResponseJson();
+        jsonDarkSky = weatherController.getResponseJson();
 
-        assertTrue(json != null);
+        ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
+
+        jsonResponse = gson.toJson(response);
+
+        log.info("Response: " + jsonResponse);
+
+        assertTrue(jsonResponse.length() > 0);
     }
 }

@@ -1,6 +1,7 @@
 package com.weatherWebService;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -11,6 +12,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 /**
@@ -27,14 +29,25 @@ public class Weather extends HttpServlet
 
     @GET
     // The Java method will produce content identified by the MIME media type "text/plain"
-    @Produces("text/plain")
+    @Produces("application/json")
     public String getClichedMessage(@QueryParam("lat") String lat, @QueryParam("lon")
-                                    String lon) throws Exception
+            String lon) throws Exception
     {
         String jsonResponse;
+        Gson gson = new GsonBuilder().create();
         wc = new WeatherController();
+        BufferedReader in;
+        String jsonDarkSky;
+
         jsonResponse = wc.printJSONResponse(wc.sendGet(lat, lon));
 
+        in = wc.sendGet(lat, lon);
+        wc.printJSONResponse(in);
+        jsonDarkSky = wc.getResponseJson();
+
+        ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
+
+        jsonResponse = gson.toJson(response);
 
 
         // Return some cliched textual content
