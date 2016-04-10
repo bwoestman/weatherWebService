@@ -25,7 +25,6 @@ import java.io.IOException;
 public class Weather extends HttpServlet
 {
     private static final Logger log = Logger.getLogger("Weather");
-    WeatherController wc;
 
     @GET
     // The Java method will produce content identified by the MIME media type "text/plain"
@@ -35,22 +34,21 @@ public class Weather extends HttpServlet
     {
         String jsonResponse;
         Gson gson = new GsonBuilder().create();
-        wc = new WeatherController();
+        WeatherController wc = new WeatherController();
         BufferedReader in;
         String jsonDarkSky;
 
+        //send GET to DarkSky API and return a json string
         jsonResponse = wc.printJSONResponse(wc.sendGet(lat, lon));
-
-        in = wc.sendGet(lat, lon);
-        wc.printJSONResponse(in);
         jsonDarkSky = wc.getResponseJson();
 
+        //store the reformatted response json
         ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
 
+        //convert response back to a string for output to the page
         jsonResponse = gson.toJson(response);
 
-
-        // Return some cliched textual content
+        //return json string response
         return jsonResponse;
     }
 }
