@@ -28,6 +28,7 @@ import java.io.IOException;
 public class Weather extends HttpServlet
 {
     private static final Logger log = Logger.getLogger("Weather");
+    //("com.weatherWebService.Weather");
 
     @GET
     /**

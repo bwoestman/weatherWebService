@@ -3,24 +3,23 @@ package com.weatherWebService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import javax.ws.rs.QueryParam;
 import java.io.BufferedReader;
 
+import static junit.framework.Assert.assertTrue;
 import static org.junit.Assert.*;
 
 /**
  * Created by scheffs on 4/11/2016.
  */
 public class WeatherTest {
-    public final static Logger log = Logger.getLogger("weatherWebService");
+    public final static Logger log = Logger.getLogger("WeatherTest");
     private Weather weather;
 
     @Test
-    public void TestResponseOK() throws Exception {
+    public void testGetClichedMessage() throws Exception {
         weather = new Weather();
-        BufferedReader response = weather.getClichedMessage("lat", "Ion");
-        assertTrue(response != null);
-
+        BufferedReader in = weather.getClichedMessage();
+        assertTrue(in != null);
     }
 
 }
