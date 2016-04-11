@@ -23,7 +23,6 @@ public class Property {
     public Property() {
 
         loadProperties(propertyUrl);
-        //setVariables();
         setTestProperty(properties.getProperty("test"));
         setProjectName(properties.getProperty("project.name"));
         setUrl(properties.getProperty("url"));
@@ -34,6 +33,7 @@ public class Property {
         return projectName;
     }
 
+    // todo: final ?
     private void setProjectName(String projectName) {
         this.projectName = projectName;
     }

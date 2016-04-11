@@ -81,7 +81,7 @@ public class WeatherController
     /**
      * This method converts the incoming stream to a string.
      *
-     * @param in the in
+     * @param in the bufferedReader
      * @return the string
      * @throws IOException the io exception
      */
