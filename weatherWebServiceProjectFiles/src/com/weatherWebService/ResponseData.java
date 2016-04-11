@@ -26,75 +26,16 @@ public class ResponseData
 
     public class Daily
     {
-        private List<Data> data;
+        private List<DayOfWeather> data;
 
-        public List<Data> getData()
+        public List<DayOfWeather> getData()
         {
             return data;
         }
 
-        public void setData(List<Data> data)
+        public void setData(List<DayOfWeather> data)
         {
             this.data = data;
-        }
-    }
-
-    public class Data
-    {
-        private String cloudCover;
-        private String windSpeed;
-        private String temperatureMin;
-        private String temperatureMax;
-        private String precipProbability;
-
-        public String getCloudCover()
-        {
-            return cloudCover;
-        }
-
-        public void setCloudCover(String cloudCover)
-        {
-            this.cloudCover = cloudCover;
-        }
-
-        public String getWindSpeed()
-        {
-            return windSpeed;
-        }
-
-        public void setWindSpeed(String windSpeed)
-        {
-            this.windSpeed = windSpeed;
-        }
-
-        public String getTemperatureMin()
-        {
-            return temperatureMin;
-        }
-
-        public void setTemperatureMin(String temperatureMin)
-        {
-            this.temperatureMin = temperatureMin;
-        }
-
-        public String getTemperatureMax()
-        {
-            return temperatureMax;
-        }
-
-        public void setTemperatureMax(String temperatureMax)
-        {
-            this.temperatureMax = temperatureMax;
-        }
-
-        public String getPrecipProbability()
-        {
-            return precipProbability;
-        }
-
-        public void setPrecipProbability(String precipProbability)
-        {
-            this.precipProbability = precipProbability;
         }
     }
 }
