@@ -19,7 +19,10 @@ import java.io.IOException;
  * Created by scheffs on 3/28/2016.
  */
 
-// The Java class will be hosted at the URI path "/weather"
+/**
+ * this class will be hosted at the URI path "/weather"
+ *
+ */
 @Path("/weather")
 
 public class Weather extends HttpServlet
@@ -27,7 +30,15 @@ public class Weather extends HttpServlet
     private static final Logger log = Logger.getLogger("Weather");
 
     @GET
-    // The Java method will produce content identified by the MIME media type "text/plain"
+    /**
+     * This method will produce content identified by the MIME media type "text/plain"
+     * Gets cliched message.
+     *
+     * @param lat the lat
+     * @param Ion the Ion
+     * @retun jsonResponse the json response
+     * @throws Exception the exception
+     */
     @Produces("application/json")
     public String getClichedMessage(@QueryParam("lat") String lat, @QueryParam("lon")
             String lon) throws Exception
