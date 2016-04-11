@@ -426,3 +426,39 @@ OK
 Sending 'GET' request to URL : https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43,89
 Response Code : 200
 OK
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+
+Sending 'GET' request to URL : https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43,89
+Response Code : 200
+OK
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+
+Sending 'GET' request to URL : https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43,89
+Response Code : 200
+OK
