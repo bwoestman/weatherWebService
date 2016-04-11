@@ -1,0 +1,1 @@
+* BW - this week I created a class to organize a nested json so that we could sort the incoming data and generate our own, smaller, json.

@@ -1,10 +1,11 @@
-import com.google.gson.FieldNamingPolicy;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.weatherWebService.DayOfWeather;
+package com.weatherWebService;
+
+import com.google.gson.*;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.BufferedReader;
 
 import static org.junit.Assert.assertTrue;
 
@@ -54,6 +55,7 @@ public class TestsForGson
 
         log.info(gson.toJson(day));
         log.info(gsonString);
+
         assertTrue((gson.toJson(day)).equals(gsonString));
     }
 
@@ -96,5 +98,24 @@ public class TestsForGson
         assertTrue(toString.equals(mmjDow.toString()));
     }
 
+    @Test
+    public void testDarkSkyJson() throws Exception
+    {
+        WeatherController weatherController = new WeatherController();
+        BufferedReader in;
+        String jsonDarkSky;
+        String jsonResponse;
 
+        in = weatherController.sendGet("41", "-89");
+        weatherController.printJSONResponse(in);
+        jsonDarkSky = weatherController.getResponseJson();
+
+        ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
+
+        jsonResponse = gson.toJson(response);
+
+        log.info("Response: " + jsonResponse);
+
+        assertTrue(jsonResponse.length() > 0);
+    }
 }

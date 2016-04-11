@@ -11,32 +11,56 @@ import java.net.URL;
 /**
  * Created by Bdub on 3/18/16.
  */
+
+/**
+ * this class is used to send a get request to the DarkSky API and to return a string
+ * json
+ */
 public class WeatherController
 {
     private final String USER_AGENT = "Mozilla/5.0";
     private final static Logger log = Logger.getLogger("com.weatherWebService.WeatherController"); //this.class
     private String responseJson = "";
+    private Property property = new Property();
 
+    /**
+     * Gets response json.
+     *
+     * @return the response json
+     */
     public String getResponseJson()
     {
         return responseJson;
     }
 
+
+    /**
+     * Sets response json.
+     *
+     * @param responseJson the response json
+     */
     public void setResponseJson(String responseJson)
     {
         this.responseJson = responseJson;
     }
 
-    public BufferedReader sendGet() throws Exception
+    /**
+     * This method sends a get request to DarkSky with appended latitude and longitude
+     * variables from the incoming GET request.
+     *
+     * @param lat the lat
+     * @param lon the lon
+     * @return the buffered reader
+     * @throws Exception the exception
+     */
+
+    public BufferedReader sendGet(String lat, String lon) throws Exception
     {
+        // todo: maybe test this ?
+        String url = property.getUrl();
+        String urlWithQuery = url + lat + "," + lon;
 
-//        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-//            "89";
-
-        String url = "https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/43," +
-                "89";
-
-        URL obj = new URL(url);
+        URL obj = new URL(urlWithQuery);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
         // optional default is GET
@@ -44,10 +68,6 @@ public class WeatherController
 
         //add request header
         con.setRequestProperty("User-Agent", USER_AGENT);
-
-        int responseCode = con.getResponseCode();
-        log.info("\nSending 'GET' request to URL : " + url);
-        log.info("Response Code : " + responseCode);
 
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
@@ -58,6 +78,14 @@ public class WeatherController
         return in;
     }
 
+    /**
+     * This method converts the incoming stream to a string.
+     *
+     * @param in the in
+     * @return the string
+     * @throws IOException the io exception
+     */
+    
     public String printJSONResponse(BufferedReader in) throws IOException
     {
 
@@ -68,12 +96,10 @@ public class WeatherController
         {
             response.append(inputLine);
         }
+
         in.close();
 
         responseJson = response.toString();
-        //print result
-        log.info(response.toString());
-        log.info("**********************************************************");
 
         return response.toString();
     }
