@@ -562,3 +562,25 @@ Response Code : 200
 OK
 =======
 >>>>>>> a06f76a2e466079155364f3222b2cba4bf0ea7fc
+OK
+OK
+{project.name=Weather Web Service, url=https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/, test=test}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+OK
+Response: {"daily":{"data":[{"cloudCover":"0.32","windSpeed":"11.73","temperatureMax":"51.04","temperatureMin":"39.13","precipProbability":"0.56"},{"cloudCover":"0","windSpeed":"3.51","temperatureMax":"49.66","temperatureMin":"29.26","precipProbability":"0"},{"cloudCover":"0.1","windSpeed":"7.22","temperatureMax":"57.73","temperatureMin":"30.66","precipProbability":"0"},{"cloudCover":"0.39","windSpeed":"8.29","temperatureMax":"63.28","temperatureMin":"37.76","precipProbability":"0"},{"cloudCover":"0.19","windSpeed":"9.45","temperatureMax":"69.25","temperatureMin":"46.9","precipProbability":"0"},{"cloudCover":"0.03","windSpeed":"7.61","temperatureMax":"72.29","temperatureMin":"52.02","precipProbability":"0"},{"cloudCover":"0.28","windSpeed":"6.84","temperatureMax":"72.96","temperatureMin":"54.32","precipProbability":"0.06"},{"cloudCover":"0.79","windSpeed":"6.57","temperatureMax":"71.06","temperatureMin":"55.87","precipProbability":"0.12"}]}}
+OK
+OK
+OK
