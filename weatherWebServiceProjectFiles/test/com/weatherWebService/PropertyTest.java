@@ -15,8 +15,6 @@ public class PropertyTest {
 
     private final static Logger log = Logger.getLogger("PropertyTest");
 
-
-
     @Test
     public void testLoadProperties() throws Exception {
 
