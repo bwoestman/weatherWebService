@@ -3,21 +3,19 @@ package com.weatherWebService;
 import org.apache.log4j.Logger;
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Created by scheffs on 4/11/2016.
  */
 public class WeatherTest {
-    public final static Logger log = Logger.getLogger("weatherWebService");
+    public final static Logger log = Logger.getLogger("WeatherTest");
     private Weather weather;
 
     @Test
-    public void TestResponseOK() throws Exception {
+    public void testGetClichedMessage() throws Exception {
         weather = new Weather();
-        String response = weather.getClichedMessage("lat", "Ion");
-        assertTrue(response != null);
-
+        String in = weather.getClichedMessage("41", "-89");
+        assertTrue(in != null);
     }
-
 }
