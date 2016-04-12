@@ -584,3 +584,23 @@ Response: {"daily":{"data":[{"cloudCover":"0.32","windSpeed":"11.73","temperatur
 OK
 OK
 OK
+{project.name=Weather Web Service, url=https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/, test=test}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+OK
+Response: {"daily":{"data":[{"cloudCover":"0","windSpeed":"3.45","temperatureMax":"52.68","temperatureMin":"29.29","precipProbability":"0"},{"cloudCover":"0.05","windSpeed":"7.88","temperatureMax":"59.09","temperatureMin":"33.95","precipProbability":"0"},{"cloudCover":"0.3","windSpeed":"8.97","temperatureMax":"63.18","temperatureMin":"38.84","precipProbability":"0"},{"cloudCover":"0.06","windSpeed":"9.69","temperatureMax":"68.52","temperatureMin":"43.39","precipProbability":"0"},{"cloudCover":"0","windSpeed":"8.07","temperatureMax":"69.87","temperatureMin":"51.03","precipProbability":"0"},{"cloudCover":"0.1","windSpeed":"5.92","temperatureMax":"71.85","temperatureMin":"53.1","precipProbability":"0.02"},{"cloudCover":"0.61","windSpeed":"4.69","temperatureMax":"72.92","temperatureMin":"55.37","precipProbability":"0.2"},{"cloudCover":"0.98","windSpeed":"5.96","temperatureMax":"72.01","temperatureMin":"55.62","precipProbability":"0.33"}]}}
+OK
+OK
+OK
