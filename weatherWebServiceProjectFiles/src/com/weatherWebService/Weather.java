@@ -51,7 +51,7 @@ public class Weather extends HttpServlet
         String jsonDarkSky;
 
         //send GET to DarkSky API and return a json string
-        jsonResponse = wc.printJSONResponse(wc.sendGet(lat, lon));
+        wc.printJSONResponse(wc.sendGet(lat, lon));
         jsonDarkSky = wc.getResponseJson();
 
         //store the reformatted response json
