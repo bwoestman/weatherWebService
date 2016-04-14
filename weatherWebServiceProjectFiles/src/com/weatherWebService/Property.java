@@ -30,6 +30,8 @@ public class Property {
         setRequest(properties.getProperty("request.method"));
         setProjectName(properties.getProperty("project.name"));
         setUrl(properties.getProperty("url"));
+        setForecastType(properties.getProperty("forecast.type"));
+        setKey(properties.getProperty("api.key"));
 
 
     }
