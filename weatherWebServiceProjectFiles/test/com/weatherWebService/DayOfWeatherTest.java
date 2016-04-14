@@ -35,6 +35,12 @@ public class DayOfWeatherTest {
     }
 
     @Test
+    public void testVariableNotSet() {
+
+        assertNull(dayOfWeather.getTemperatureMax());
+    }
+
+    @Test
     public void testGetCloudCover() throws Exception {
 
         String test = dayOfWeather.getCloudCover();

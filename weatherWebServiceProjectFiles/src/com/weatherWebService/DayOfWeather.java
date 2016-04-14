@@ -30,7 +30,7 @@ public class DayOfWeather
     /**
      * Set the value of the instance variable for cloudCover
      *
-     * @param cloudCover
+     * @param cloudCover the percentage of cloud cover for the day
      */
     public void setCloudCover(String cloudCover)
     {
@@ -42,7 +42,7 @@ public class DayOfWeather
      *
      * Returns the value of the instance variable windSpeed
      *
-     * @return windspeed the windspeed for the day
+     * @return windspeed the average windspeed for the day
      */
     public String getWindSpeed()
     {
@@ -53,7 +53,7 @@ public class DayOfWeather
     /**
      * Set the instance variable for windSpeed
      *
-     * @param windSpeed
+     * @param windSpeed the average wind speed for the day
      */
     public void setWindSpeed(String windSpeed)
     {
@@ -73,7 +73,7 @@ public class DayOfWeather
     /**
      * Sets the temperatureMax instance variable
      *
-     * @param temperatureMax
+     * @param temperatureMax the high temperature for the day
      */
     public void setTemperatureMax(String temperatureMax)
     {
@@ -83,7 +83,7 @@ public class DayOfWeather
     /**
      * Gets the value of temperature min instance variable
      *
-     * @return
+     * @return temeratureMin - the daily low temperature
      */
     public String getTemperatureMin()
     {
@@ -93,7 +93,7 @@ public class DayOfWeather
     /**
      * Set method for temperatureMin instance variable
      *
-     * @param temperatureMin
+     * @param temperatureMin the low temperature of the day
      */
     public void setTemperatureMin(String temperatureMin)
     {
