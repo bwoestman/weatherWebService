@@ -22,6 +22,7 @@ public class WeatherController
     private final static Logger log = Logger.getLogger("com.weatherWebService.WeatherController"); //this.class
     private String responseJson = "";
     private Property property = new Property();
+    private String message = "";
 
     /**
      * Gets response json.
@@ -42,6 +43,14 @@ public class WeatherController
     public void setResponseJson(String responseJson)
     {
         this.responseJson = responseJson;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     /**
@@ -72,11 +81,13 @@ public class WeatherController
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
 
-        String message = con.getResponseMessage();
+        message = con.getResponseMessage();
         log.info(message);
 
         return in;
     }
+
+
 
     /**
      * This method converts the incoming stream to a string.

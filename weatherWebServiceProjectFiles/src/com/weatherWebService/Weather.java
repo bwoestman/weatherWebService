@@ -27,8 +27,7 @@ import java.io.IOException;
 
 public class Weather extends HttpServlet
 {
-    private static final Logger log = Logger.getLogger("Weather");
-    //("com.weatherWebService.Weather");
+    private static final Logger log = Logger.getLogger("com.weatherWebService.Weather");
 
     @GET
     /**
@@ -51,7 +50,7 @@ public class Weather extends HttpServlet
         String jsonDarkSky;
 
         //send GET to DarkSky API and return a json string
-        jsonResponse = wc.printJSONResponse(wc.sendGet(lat, lon));
+        wc.printJSONResponse(wc.sendGet(lat, lon));
         jsonDarkSky = wc.getResponseJson();
 
         //store the reformatted response json
@@ -61,6 +60,12 @@ public class Weather extends HttpServlet
         jsonResponse = gson.toJson(response);
 
         //return json string response
-        return jsonResponse;
+        //Show an error in case the service is down
+        if (wc.getMessage().equals("OK"))
+        {
+            return jsonResponse;
+        } else {
+            return "The server encountered and error processing the request, Please try again later.";
+        }
     }
 }
