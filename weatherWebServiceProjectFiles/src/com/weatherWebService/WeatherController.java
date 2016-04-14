@@ -9,10 +9,8 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 /**
- * Created by Bdub on 3/18/16.
- */
-
-/**
+ * @created Bdub on 3/18/16
+ *
  * this class is used to send a get request to the DarkSky API and to return a string
  * json
  */
@@ -69,6 +67,7 @@ public class WeatherController
         String url = property.getUrl();
         String key = property.getKey();
         String forecastType = property.getForecastType();
+        // TODO: won't work ??
         //String urlWithQuery = url + "/" + forecastType + "/" + key + "/" + lat + "," + lon;
         String urlWithQuery = url + lat + "," + lon;
         log.info(urlWithQuery);

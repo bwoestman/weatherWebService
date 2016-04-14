@@ -66,24 +66,25 @@ public class Property {
     /**
      * Set the url from the property file
      *
-     * @param url
+     * @param url the url for the request
      */
     private void setUrl(String url) {
         this.url = url;
     }
 
     /**
+     *  Get the type of the request
      *
-     *
-     * @return
+     * @return request the type of request
      */
     public String getRequest() {
         return request;
     }
 
     /**
+     * Set the request type
      *
-     * @param request
+     * @param request sets to get or post
      */
     private void setRequest(String request) {
 
@@ -91,40 +92,45 @@ public class Property {
     }
 
     /**
+     * get properties from the properties file
      *
-     * @return
+     * @return properties the key/values from the file
      */
     public Properties getProperties() {
         return properties;
     }
 
     /**
+     * gets the api key from properties file
      *
-     * @return
+     * @return key the api key
      */
     public String getKey() {
         return key;
     }
 
     /**
+     * set the api key from value in the properties file
      *
-     * @param key
+     * @param key the api key for the request
      */
     private void setKey(String key) {
         this.key = key;
     }
 
     /**
+     * Get the forecast type for the day
      *
-     * @return
+     * @return forecastType the type of forecast you are looking for
      */
     public String getForecastType() {
         return forecastType;
     }
 
     /**
+     *  Sets the type of forecast requested
      *
-     * @param forecastType
+     * @param forecastType the vlaue set in the properties file
      */
     private void setForecastType(String forecastType) {
         this.forecastType = forecastType;
@@ -132,8 +138,8 @@ public class Property {
 
 
     /**
+     *  load all the key and values form the weather.properties file
      *
-     * @param propertiesFilePath
      */
     private void loadProperties(String propertiesFilePath) {
 

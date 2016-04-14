@@ -29,6 +29,8 @@ public class PropertyTest {
         assertNotNull("Properties path is incorrect", property.getProperties());
     }
 
+
+
     @Test
     public void checkProjectNameVariable() {
 
