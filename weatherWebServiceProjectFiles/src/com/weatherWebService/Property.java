@@ -6,8 +6,12 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
+ *
+ * This file gets and store all the information from the property file.
+ *
  * @author jjjasonm
- *         Created on 4/8/16.
+ *
+ *
  */
 public class Property {
 
