@@ -8,3 +8,6 @@
 ## Response
 * Contains JSON data for each of the next seven days
 * Example for one day: {"daily": {"data":[{"cloudCover":"0","windSpeed":"3.14","temperatureMax":"52.15","temperatureMin":"29.35","precipProbability":"0"}]}}
+
+## JSON Viewer Website
+* [JSON Viewer] (http://jsonviewer.stack.hu/)
