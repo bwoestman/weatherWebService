@@ -9,6 +9,7 @@ import static junit.framework.Assert.assertTrue;
  * Created by scheffs on 4/11/2016.
  */
 public class WeatherTest {
+
     public final static Logger log = Logger.getLogger("WeatherTest");
     private Weather weather;
 
