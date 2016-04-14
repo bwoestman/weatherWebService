@@ -2,3 +2,53 @@ Wind Speed: null, Cloudiness: cloudy, High Temp of Day: null, Low Temp of Day: n
 Wind Speed: strong, Cloudiness: cloudy, High Temp of Day: null, Low Temp of Day: null, Precip Chance: null
 Test complete.
 Test complete.
+Test complete.
+Test complete.
+Test complete.
+Test complete.
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+{
+  "CloudCover": "clouds",
+  "WindSpeed": "windSpeed",
+  "TemperatureMax": "highTemp",
+  "TemperatureMin": "lowTemp",
+  "PrecipProbability": "precip"
+}
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+Response: {"daily":{"data":[{"cloudCover":"0.19","windSpeed":"8.96","temperatureMax":"68.39","temperatureMin":"37.23","precipProbability":"0"},{"cloudCover":"0.11","windSpeed":"8.95","temperatureMax":"74.45","temperatureMin":"41.29","precipProbability":"0"},{"cloudCover":"0.07","windSpeed":"7.7","temperatureMax":"75.47","temperatureMin":"51.59","precipProbability":"0.01"},{"cloudCover":"0.11","windSpeed":"5.18","temperatureMax":"75.56","temperatureMin":"51.22","precipProbability":"0"},{"cloudCover":"0.63","windSpeed":"5.68","temperatureMax":"77.11","temperatureMin":"51.02","precipProbability":"0.08"},{"cloudCover":"0.94","windSpeed":"9.93","temperatureMax":"66.84","temperatureMin":"46.41","precipProbability":"0.09"},{"cloudCover":"0.05","windSpeed":"2.49","temperatureMax":"68.74","temperatureMin":"47.2","precipProbability":"0.06"},{"cloudCover":"0","windSpeed":"8.87","temperatureMax":"72.73","temperatureMin":"49.35","precipProbability":"0.01"}]}}
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+Response: {"daily":{"data":[{"cloudCover":"0.19","windSpeed":"8.96","temperatureMax":"68.39","temperatureMin":"37.23","precipProbability":"0"},{"cloudCover":"0.11","windSpeed":"8.95","temperatureMax":"74.45","temperatureMin":"41.29","precipProbability":"0"},{"cloudCover":"0.07","windSpeed":"7.7","temperatureMax":"75.47","temperatureMin":"51.59","precipProbability":"0.01"},{"cloudCover":"0.11","windSpeed":"5.18","temperatureMax":"75.56","temperatureMin":"51.22","precipProbability":"0"},{"cloudCover":"0.63","windSpeed":"5.68","temperatureMax":"77.12","temperatureMin":"51.02","precipProbability":"0.08"},{"cloudCover":"0.94","windSpeed":"9.93","temperatureMax":"66.84","temperatureMin":"46.41","precipProbability":"0.09"},{"cloudCover":"0.05","windSpeed":"2.49","temperatureMax":"68.74","temperatureMin":"47.2","precipProbability":"0.06"},{"cloudCover":"0","windSpeed":"8.87","temperatureMax":"72.73","temperatureMin":"49.35","precipProbability":"0.01"}]}}
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+Response: {"daily":{"data":[{"cloudCover":"0.19","windSpeed":"8.96","temperatureMax":"68.39","temperatureMin":"37.23","precipProbability":"0"},{"cloudCover":"0.11","windSpeed":"8.95","temperatureMax":"74.45","temperatureMin":"41.29","precipProbability":"0"},{"cloudCover":"0.07","windSpeed":"7.7","temperatureMax":"75.47","temperatureMin":"51.59","precipProbability":"0.01"},{"cloudCover":"0.11","windSpeed":"5.18","temperatureMax":"75.56","temperatureMin":"51.22","precipProbability":"0"},{"cloudCover":"0.63","windSpeed":"5.68","temperatureMax":"77.12","temperatureMin":"51.03","precipProbability":"0.08"},{"cloudCover":"0.94","windSpeed":"9.93","temperatureMax":"66.84","temperatureMin":"46.41","precipProbability":"0.09"},{"cloudCover":"0.05","windSpeed":"2.49","temperatureMax":"68.74","temperatureMin":"47.2","precipProbability":"0.06"},{"cloudCover":"0","windSpeed":"8.87","temperatureMax":"72.73","temperatureMin":"49.35","precipProbability":"0.01"}]}}
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+DayOfWeather Test complete.
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+Response: {"daily":{"data":[{"cloudCover":"0.19","windSpeed":"8.96","temperatureMax":"68.39","temperatureMin":"37.23","precipProbability":"0"},{"cloudCover":"0.11","windSpeed":"8.95","temperatureMax":"74.45","temperatureMin":"41.28","precipProbability":"0"},{"cloudCover":"0.07","windSpeed":"7.7","temperatureMax":"75.48","temperatureMin":"51.59","precipProbability":"0.01"},{"cloudCover":"0.11","windSpeed":"5.18","temperatureMax":"75.57","temperatureMin":"51.22","precipProbability":"0"},{"cloudCover":"0.63","windSpeed":"5.68","temperatureMax":"77.11","temperatureMin":"51.02","precipProbability":"0.08"},{"cloudCover":"0.94","windSpeed":"9.93","temperatureMax":"66.85","temperatureMin":"46.38","precipProbability":"0.09"},{"cloudCover":"0.05","windSpeed":"2.49","temperatureMax":"68.75","temperatureMin":"47.17","precipProbability":"0.06"},{"cloudCover":"0","windSpeed":"8.87","temperatureMax":"72.74","temperatureMin":"49.31","precipProbability":"0.01"}]}}
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89
+https://api.forecast.io/forecast/384e291c8f22981980d220fd0400870a/41,-89

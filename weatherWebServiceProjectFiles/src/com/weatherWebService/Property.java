@@ -22,7 +22,8 @@ public class Property {
 
 
     /**
-     * Constructor for the property class. It loads the properties and assigns thme to instance variables
+     * Constructor for the property class. It loads the properties and assigns the value form the properties file
+     * to instance variables.
      */
     public Property() {
 
@@ -32,31 +33,31 @@ public class Property {
         setUrl(properties.getProperty("url"));
         setForecastType(properties.getProperty("forecast.type"));
         setKey(properties.getProperty("api.key"));
-
-
     }
-    // todo: finish javadocs
+
     /**
+     * Get the value of the project name variable
      *
-     * @return
+     * @return projectName the name of the project from property file
      */
     public String getProjectName() {
+
         return projectName;
     }
 
-    // todo: final ?
-
     /**
+     * Set project name variable
      *
-     * @param projectName
+     * @param projectName name of project from properties class
      */
-    private final void setProjectName(String projectName) {
+    private void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
     /**
+     * Get value of url instance variable
      *
-     * @return
+     * @return url the url of the request
      */
     public String getUrl() {
         return url;

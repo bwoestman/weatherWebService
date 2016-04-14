@@ -52,13 +52,13 @@ public class DayOfWeatherTest {
     public void toStringTest2() {
 
         String toString = dayOfWeather.toString();
-        assertFalse("I work",toString.matches("Cloudiness:[a-zA-Z]*?"));
+        assertFalse("First character is not a letter.", toString.matches("Cloudiness:[a-zA-Z]*?"));
     }
 
     @After
     public void testComplete() {
 
-        log.info("Test complete.");
+        log.info("DayOfWeather Test complete.");
     }
 
 }
