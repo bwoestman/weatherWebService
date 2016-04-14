@@ -4,16 +4,12 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.log4j.Logger;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import java.io.BufferedReader;
-import java.io.IOException;
 
 /**
  * Created by scheffs on 3/28/2016.
@@ -27,7 +23,12 @@ import java.io.IOException;
 
 public class Weather extends HttpServlet
 {
+<<<<<<< HEAD
     private static final Logger log = Logger.getLogger("com.weatherWebService.Weather");
+=======
+    private static final Logger log = Logger.getLogger("Weather");
+
+>>>>>>> a00120236895e385df4730bd2f4bfc7122c4e32d
 
     @GET
     /**
@@ -36,7 +37,7 @@ public class Weather extends HttpServlet
      *
      * @param lat the lat
      * @param Ion the Ion
-     * @retun jsonResponse the json response
+     * @return jsonResponse the json response
      * @throws Exception the exception
      */
     @Produces("application/json")

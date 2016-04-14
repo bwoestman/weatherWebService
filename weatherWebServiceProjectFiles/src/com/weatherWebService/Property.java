@@ -11,56 +11,111 @@ import java.util.Properties;
  */
 public class Property {
 
-
     private Properties properties;
     private String propertyUrl = "/weather.properties";
     private String projectName;
     private String url;
-    private String testProperty;
-
+    private String forecastType;
+    private String key;
+    private String request;
     public final static Logger log = Logger.getLogger("com.weatherWebService.Property");
 
+
+    /**
+     * Constructor for the property class. It loads the properties and assigns thme to instance variables
+     */
     public Property() {
 
         loadProperties(propertyUrl);
-        //setVariables();
-        setTestProperty(properties.getProperty("test"));
+        setRequest(properties.getProperty("request.method"));
         setProjectName(properties.getProperty("project.name"));
         setUrl(properties.getProperty("url"));
+        setForecastType(properties.getProperty("forecast.type"));
+        setKey(properties.getProperty("api.key"));
+
 
     }
-
+    // todo: finish javadocs
+    /**
+     *
+     * @return
+     */
     public String getProjectName() {
         return projectName;
     }
 
-    private void setProjectName(String projectName) {
+    // todo: final ?
+
+    /**
+     *
+     * @param projectName
+     */
+    private final void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getUrl() {
         return url;
     }
 
+    /**
+     *
+     * @param url
+     */
     private void setUrl(String url) {
         this.url = url;
     }
 
-    public String getTestProperty() {
-        return testProperty;
+    /**
+     *
+     * @return
+     */
+    public String getRequest() {
+        return request;
     }
 
-    private void setTestProperty(String testProperty) {
+    /**
+     *
+     * @param request
+     */
+    private void setRequest(String request) {
 
-        this.testProperty = testProperty;
+        this.request = request;
     }
 
+    /**
+     *
+     * @return
+     */
     public Properties getProperties() {
         return properties;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    private void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getForecastType() {
+        return forecastType;
+    }
+
+    private void setForecastType(String forecastType) {
+        this.forecastType = forecastType;
+    }
 
 
+    /**
+     *
+     * @param propertiesFilePath
+     */
     private void loadProperties(String propertiesFilePath) {
 
         properties = new Properties();

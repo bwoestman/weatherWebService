@@ -67,6 +67,9 @@ public class WeatherController
     {
         // todo: maybe test this ?
         String url = property.getUrl();
+        String key = property.getKey();
+        String forecastType = property.getForecastType();
+        //String urlWithQuery = url + "/" + forecastType + "/" + key + "/" + lat + "," + lon;
         String urlWithQuery = url + lat + "," + lon;
 
         URL obj = new URL(urlWithQuery);
@@ -81,8 +84,12 @@ public class WeatherController
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(con.getInputStream()));
 
+<<<<<<< HEAD
         message = con.getResponseMessage();
         log.info(message);
+=======
+        String message = con.getResponseMessage();
+>>>>>>> a00120236895e385df4730bd2f4bfc7122c4e32d
 
         return in;
     }
@@ -92,7 +99,7 @@ public class WeatherController
     /**
      * This method converts the incoming stream to a string.
      *
-     * @param in the in
+     * @param in the bufferedReader
      * @return the string
      * @throws IOException the io exception
      */
