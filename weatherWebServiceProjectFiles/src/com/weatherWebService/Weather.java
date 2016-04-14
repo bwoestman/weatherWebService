@@ -23,8 +23,12 @@ import java.io.BufferedReader;
 
 public class Weather extends HttpServlet
 {
+<<<<<<< HEAD
+    private static final Logger log = Logger.getLogger("com.weatherWebService.Weather");
+=======
     private static final Logger log = Logger.getLogger("Weather");
 
+>>>>>>> a00120236895e385df4730bd2f4bfc7122c4e32d
 
     @GET
     /**
@@ -57,6 +61,12 @@ public class Weather extends HttpServlet
         jsonResponse = gson.toJson(response);
 
         //return json string response
-        return jsonResponse;
+        //Show an error in case the service is down
+        if (wc.getMessage().equals("OK"))
+        {
+            return jsonResponse;
+        } else {
+            return "The server encountered and error processing the request, Please try again later.";
+        }
     }
 }
