@@ -64,6 +64,7 @@ public class Property {
     }
 
     /**
+     * Set the url from the property file
      *
      * @param url
      */
@@ -72,6 +73,7 @@ public class Property {
     }
 
     /**
+     *
      *
      * @return
      */
@@ -96,18 +98,34 @@ public class Property {
         return properties;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getKey() {
         return key;
     }
 
+    /**
+     *
+     * @param key
+     */
     private void setKey(String key) {
         this.key = key;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getForecastType() {
         return forecastType;
     }
 
+    /**
+     *
+     * @param forecastType
+     */
     private void setForecastType(String forecastType) {
         this.forecastType = forecastType;
     }

@@ -65,7 +65,7 @@ public class WeatherController
 
     public BufferedReader sendGet(String lat, String lon) throws Exception
     {
-        // todo: maybe test this ?
+
         String url = property.getUrl();
         String key = property.getKey();
         String forecastType = property.getForecastType();
