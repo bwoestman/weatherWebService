@@ -1,1 +1,2 @@
 * BW - this week I created a class to organize a nested json so that we could sort the incoming data and generate our own, smaller, json.
+* NS - Week 11/12 I added a unit testing for weather.java, added error handling in case the service is down, added some info for team presentation.
