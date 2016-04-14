@@ -17,7 +17,6 @@ import java.io.BufferedReader;
 
 /**
  * this class will be hosted at the URI path "/weather"
- *
  */
 @Path("/weather")
 
@@ -41,29 +40,37 @@ public class Weather extends HttpServlet
     public String getClichedMessage(@QueryParam("lat") String lat, @QueryParam("lon")
             String lon) throws Exception
     {
-        String jsonResponse;
-        Gson gson = new GsonBuilder().create();
-        WeatherController wc = new WeatherController();
-        BufferedReader in;
-        String jsonDarkSky;
-
-        //send GET to DarkSky API and return a json string
-        wc.printJSONResponse(wc.sendGet(lat, lon));
-        jsonDarkSky = wc.getResponseJson();
-
-        //store the reformatted response json
-        ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
-
-        //convert response back to a string for output to the page
-        jsonResponse = gson.toJson(response);
-
-        //return json string response
-        //Show an error in case the service is down
-        if (wc.getMessage().equals("OK"))
+        if (lat != null || lon != null)
         {
-            return jsonResponse;
-        } else {
-            return "The server encountered and error processing the request, Please try again later.";
+            String jsonResponse;
+            Gson gson = new GsonBuilder().create();
+            WeatherController wc = new WeatherController();
+            BufferedReader in;
+            String jsonDarkSky;
+
+            //send GET to DarkSky API and return a json string
+            wc.printJSONResponse(wc.sendGet(lat, lon));
+            jsonDarkSky = wc.getResponseJson();
+
+            //store the reformatted response json
+            ResponseData response = gson.fromJson(jsonDarkSky, ResponseData.class);
+
+            //convert response back to a string for output to the page
+            jsonResponse = gson.toJson(response);
+
+            //return json string response
+            //Show an error in case the service is down
+            if (wc.getMessage().equals("OK"))
+            {
+                return jsonResponse;
+            } else
+            {
+                return "The server encountered and error processing the request, Please try again later.";
+            }
+        }
+        else
+        {
+            return "You must enter longitude and latitude.  See user guide.";
         }
     }
 }
