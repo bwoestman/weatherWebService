@@ -20,7 +20,7 @@ public class DayOfWeather
     /**
      * Returns the value of the instance variable cloudCover
      *
-     * @return cloud cover
+     * @return cloud cover percentage of cloud cover for the day
      */
     public String getCloudCover()
     {
@@ -28,7 +28,7 @@ public class DayOfWeather
     }
 
     /**
-     *
+     * Set the value of the instance variable for cloudCover
      *
      * @param cloudCover
      */
@@ -41,7 +41,8 @@ public class DayOfWeather
     /**
      *
      * Returns the value of the instance variable windSpeed
-     * @return
+     *
+     * @return windspeed the windspeed for the day
      */
     public String getWindSpeed()
     {
@@ -50,6 +51,7 @@ public class DayOfWeather
     }
 
     /**
+     * Set the instance variable for windSpeed
      *
      * @param windSpeed
      */
@@ -59,8 +61,9 @@ public class DayOfWeather
     }
 
     /**
+     * Gets the value for temperatureMax
      *
-     * @return
+     * @return temperatureMax the high temperature for the day
      */
     public String getTemperatureMax()
     {
@@ -68,6 +71,7 @@ public class DayOfWeather
     }
 
     /**
+     * Sets the temperatureMax instance variable
      *
      * @param temperatureMax
      */
@@ -77,6 +81,7 @@ public class DayOfWeather
     }
 
     /**
+     * Gets the value of temperature min instance variable
      *
      * @return
      */
@@ -85,6 +90,11 @@ public class DayOfWeather
         return temperatureMin;
     }
 
+    /**
+     * Set method for temperatureMin instance variable
+     *
+     * @param temperatureMin
+     */
     public void setTemperatureMin(String temperatureMin)
     {
         this.temperatureMin = temperatureMin;
@@ -93,7 +103,7 @@ public class DayOfWeather
     /**
      * Get method for precipProbability
      *
-     * @return value of precipProbability
+     * @return precipProbability the chance of precipitation for the day
      */
     public String getPrecipProbability()
     {
@@ -115,9 +125,9 @@ public class DayOfWeather
      *
      * @return The string content of all instance variables
      */
+    @Override
     public String toString()
     {
-
         return "Wind Speed: " + getWindSpeed()
                 + ", Cloudiness: " + getCloudCover()
                 + ", High Temp of Day: " + getTemperatureMax()
