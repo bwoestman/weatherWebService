@@ -19,6 +19,7 @@ public class PropertyTest {
 
     @Before
     public void setUp() {
+
         property = new Property();
     }
 

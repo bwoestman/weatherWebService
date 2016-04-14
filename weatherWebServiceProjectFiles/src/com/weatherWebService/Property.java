@@ -33,8 +33,6 @@ public class Property {
         setUrl(properties.getProperty("url"));
         setForecastType(properties.getProperty("forecast.type"));
         setKey(properties.getProperty("api.key"));
-
-
     }
 
     /**
@@ -48,16 +46,18 @@ public class Property {
     }
 
     /**
+     * Set project name variable
      *
-     * @param projectName
+     * @param projectName name of project from properties class
      */
     private void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 
     /**
+     * Get value of url instance variable
      *
-     * @return
+     * @return url the url of the request
      */
     public String getUrl() {
         return url;
