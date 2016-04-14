@@ -22,7 +22,8 @@ public class Property {
 
 
     /**
-     * Constructor for the property class. It loads the properties and assigns thme to instance variables
+     * Constructor for the property class. It loads the properties and assigns the value form the properties file
+     * to instance variables.
      */
     public Property() {
 
@@ -35,22 +36,22 @@ public class Property {
 
 
     }
-    // todo: finish javadocs
+
     /**
+     * Get the value of the project name variable
      *
-     * @return
+     * @return projectName the name of the project from property file
      */
     public String getProjectName() {
+
         return projectName;
     }
-
-    // todo: final ?
 
     /**
      *
      * @param projectName
      */
-    private final void setProjectName(String projectName) {
+    private void setProjectName(String projectName) {
         this.projectName = projectName;
     }
 

@@ -53,10 +53,7 @@ public class TestsForGson
                 .serializeNulls()
                 .create();
 
-        log.info(gson.toJson(day));
-        log.info(gsonString);
-
-        assertTrue((gson.toJson(day)).equals(gsonString));
+        assertTrue("Strings do not match",(gson.toJson(day)).equals(gsonString));
     }
 
     /**

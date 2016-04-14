@@ -62,7 +62,7 @@ public class WeatherController
         String forecastType = property.getForecastType();
         //String urlWithQuery = url + "/" + forecastType + "/" + key + "/" + lat + "," + lon;
         String urlWithQuery = url + lat + "," + lon;
-
+        log.info(urlWithQuery);
         URL obj = new URL(urlWithQuery);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 

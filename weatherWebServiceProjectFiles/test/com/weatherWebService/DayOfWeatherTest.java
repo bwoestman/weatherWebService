@@ -58,7 +58,7 @@ public class DayOfWeatherTest {
     @After
     public void testComplete() {
 
-        log.info("Test complete.");
+        log.info("DayOfWeather Test complete.");
     }
 
 }
