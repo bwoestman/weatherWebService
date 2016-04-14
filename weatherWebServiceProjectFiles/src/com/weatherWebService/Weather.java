@@ -23,12 +23,9 @@ import java.io.BufferedReader;
 
 public class Weather extends HttpServlet
 {
-<<<<<<< HEAD
     private static final Logger log = Logger.getLogger("com.weatherWebService.Weather");
-=======
-    private static final Logger log = Logger.getLogger("Weather");
 
->>>>>>> a00120236895e385df4730bd2f4bfc7122c4e32d
+    //private static final Logger log = Logger.getLogger("Weather");
 
     @GET
     /**
