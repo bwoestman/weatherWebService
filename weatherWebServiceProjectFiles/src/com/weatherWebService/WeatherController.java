@@ -58,6 +58,9 @@ public class WeatherController
     {
         // todo: maybe test this ?
         String url = property.getUrl();
+        String key = property.getKey();
+        String forecastType = property.getForecastType();
+        //String urlWithQuery = url + "/" + forecastType + "/" + key + "/" + lat + "," + lon;
         String urlWithQuery = url + lat + "," + lon;
 
         URL obj = new URL(urlWithQuery);
@@ -73,7 +76,6 @@ public class WeatherController
                 new InputStreamReader(con.getInputStream()));
 
         String message = con.getResponseMessage();
-        log.info(message);
 
         return in;
     }
