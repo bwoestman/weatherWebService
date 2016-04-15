@@ -12,19 +12,19 @@ import javax.ws.rs.QueryParam;
 import java.io.BufferedReader;
 
 /**
- * Created by scheffs on 3/28/2016.
+ * This class will be hosted at the URI path "/weather". It takes the parameters and send the parameters
+ * to the dark skies api.
+ *
+ * @author scheffs
+ * @version 1.0
+ * @since 3/28/2016
  */
 
-/**
- * this class will be hosted at the URI path "/weather"
- */
 @Path("/weather")
 
 public class Weather extends HttpServlet
 {
     private static final Logger log = Logger.getLogger("com.weatherWebService.Weather");
-
-    //private static final Logger log = Logger.getLogger("Weather");
 
     @GET
     /**

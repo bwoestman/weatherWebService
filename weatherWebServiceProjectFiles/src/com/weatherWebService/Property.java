@@ -10,6 +10,7 @@ import java.util.Properties;
  * This file gets and store all the information from the property file.
  *
  * @author jjjasonm
+ * @version 1.1
  *
  *
  */
@@ -134,7 +135,7 @@ public class Property {
     /**
      *  Sets the type of forecast requested
      *
-     * @param forecastType the vlaue set in the properties file
+     * @param forecastType the value set in the properties file
      */
     private void setForecastType(String forecastType) {
         this.forecastType = forecastType;
@@ -143,7 +144,7 @@ public class Property {
 
     /**
      *  load all the key and values form the weather.properties file
-     *
+     *  @param propertiesFilePath file path location of the properties file
      */
     private void loadProperties(String propertiesFilePath) {
 

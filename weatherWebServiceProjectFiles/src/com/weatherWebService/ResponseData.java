@@ -3,11 +3,11 @@ package com.weatherWebService;
 import java.util.List;
 
 /**
- * Created by Bdub on 4/10/16.
- */
-
-/**
- * this class is used to store the incoming json data from DarkSky API
+ * This class is used to store the incoming json data from DarkSky API
+ *
+ * @author Bdub
+ * @version 1.1
+ * @since 4/10/16.
  */
 
 public class ResponseData
@@ -24,6 +24,14 @@ public class ResponseData
         this.daily = daily;
     }
 
+    /**
+     * This class stores each day of weather in a list
+     *
+     * @author Bdub
+     * @version 1.1
+     * @since 4/10/16.
+     *
+     */
     public class Daily
     {
         private List<DayOfWeather> data;
